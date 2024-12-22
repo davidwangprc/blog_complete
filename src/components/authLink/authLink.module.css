@@ -1,0 +1,64 @@
+.link {
+    color: var(--textPrimary);
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.logoutButton {
+    border: none;
+    background: var(--danger);
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.logoutButton:hover {
+    opacity: 0.8;
+}
+
+
+/* 点击菜单样式 */
+
+.writeContainer {
+    position: relative;
+    display: inline-block;
+    /* background-color: red; */
+}
+
+.writeLink {
+    color: var(--textPrimary);
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.writeLink:hover {
+    color: var(--primary);
+}
+
+.writeMenu {
+    position: absolute;
+    top: 100%;
+    right: 50;
+    background: var(--softBg);
+    /* background-color: red; */
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 0.5rem 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    /* min-width: 120px; */
+}
+
+.menuItem {
+    display: block;
+    padding: 0.0rem 0rem;
+    color: var(--textColor);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+}
+
+.menuItem:hover {
+    /* background-color: var(--hover); */
+    color: var(--softTextColor);
+}

@@ -1,0 +1,99 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.categories {
+    margin-bottom: 30px;
+}
+
+.title {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.titleText {
+    font-size: 2.5rem;
+    color: var(--textColor);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.titleSection {
+    display: flex;
+    align-items: baseline;
+    gap: 15px;
+}
+
+.titleText {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--textColor);
+    margin: 0;
+}
+
+.totalCount {
+    color: var(--softTextColor);
+    font-size: 16px;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.perPageLabel {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--textColor);
+    font-size: 14px;
+}
+
+.perPageSelect {
+    padding: 5px 10px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    background: var(--bg);
+    color: var(--textColor);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.perPageSelect:hover {
+    border-color: var(--textColor);
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    color: var(--textColor);
+    font-size: 18px;
+}
+
+/* 响应式设计 */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    .titleText {
+        font-size: 2rem;
+    }
+}
+

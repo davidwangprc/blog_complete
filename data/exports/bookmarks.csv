@@ -1,0 +1,6 @@
+﻿id,title,url,description,category,tags,featured,createdAt
+1,"Next.js 文档","https://nextjs.org/docs","Next.js 框架的官方文档，包含完整的 API 参考和教程。","开发文档",,1,Sat Dec 07 2024 11:00:52 GMT+0800 (中国标准时间)
+2,"React 文档","https://react.dev","React 库的官方文档，包含组件、Hooks 等核心概念。","开发文档",,1,Sat Dec 07 2024 11:00:52 GMT+0800 (中国标准时间)
+3,"VS Code","https://code.visualstudio.com","强大的代码编辑器，支持多种编程语言和扩展。","工具资源",,1,Sat Dec 07 2024 11:00:52 GMT+0800 (中国标准时间)
+4,"ChatGPT","https://chat.openai.com","OpenAI 开发的智能对话系统。","AI 资源",,1,Sat Dec 07 2024 11:00:52 GMT+0800 (中国标准时间)
+5,"ComfyUI","https://github.com/comfyanonymous/ComfyUI","强大的 Stable Diffusion 图形化工作流工具。","AI 资源",,1,Sat Dec 07 2024 11:00:52 GMT+0800 (中国标准时间)

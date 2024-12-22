@@ -1,0 +1,40 @@
+[
+  {
+    "id": 1,
+    "title": "番茄炒蛋",
+    "description": "简单美味的家常菜",
+    "slug": "tomato-fried-eggs",
+    "steps": "\n1. 将鸡蛋打散，加入适量盐调味\n2. 番茄切块\n3. 热油锅，倒入蛋液炒至金黄\n4. 盛出备用\n5. 同一锅中爆香葱花\n6. 加入番茄翻炒出汤\n7. 放入炒好的蛋\n8. 调味即可出锅",
+    "cookingTime": 15,
+    "servings": 2,
+    "difficulty": "EASY",
+    "image": null,
+    "createdAt": "2024-12-07T03:00:52.802Z",
+    "updatedAt": "2024-12-07T03:00:52.802Z",
+    "authorId": 1,
+    "categoryId": 4,
+    "authorName": "David Wang",
+    "categoryTitle": "Food",
+    "tagNames": null,
+    "ingredients": null
+  },
+  {
+    "id": 2,
+    "title": "红烧排骨",
+    "description": "经典美味的红烧菜",
+    "slug": "braised-pork-ribs",
+    "steps": "\n1. 排骨切段，冷水下锅焯烫去血水\n2. 热油锅，放入姜片爆香\n3. 加入排骨翻炒上色\n4. 加入料酒、生抽、老抽\n5. 加入适量清水\n6. 大火烧开后转小火炖煮40分钟\n7. 调入盐味\n8. 大火收汁即可",
+    "cookingTime": 45,
+    "servings": 4,
+    "difficulty": "MEDIUM",
+    "image": null,
+    "createdAt": "2024-12-07T03:04:09.945Z",
+    "updatedAt": "2024-12-07T03:04:09.945Z",
+    "authorId": 1,
+    "categoryId": 4,
+    "authorName": "David Wang",
+    "categoryTitle": "Food",
+    "tagNames": null,
+    "ingredients": null
+  }
+]

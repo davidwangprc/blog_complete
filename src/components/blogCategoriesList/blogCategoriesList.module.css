@@ -1,0 +1,156 @@
+.container {
+  margin-top: 50px;
+  padding: 0 10px; /* 添加内边距 */
+}
+
+.title {
+  margin: 30px 0px;
+  font-size: clamp(1.5rem, 2.5vw, 2rem); /* 响应式字体大小 */
+}
+
+.categories {
+  margin-top: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* 改为居中对齐 */
+  gap: clamp(10px, 2vw, 20px); /* 响应式间距 */
+  width: 100%;
+}
+
+.categoryItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-transform: capitalize;
+  width: 15%;
+  height: 80px;
+  justify-content: center;
+  border-radius: 10px;
+  transition: all 0.3s ease; /* 添加过渡效果 */
+  padding: 10px;
+  min-width: 150px; /* 设置最小宽度 */
+}
+
+.categoryItem:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.image {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.image:hover {
+  transform: scale(1.1);
+}
+
+.loading {
+  text-align: center;
+  padding: clamp(20px, 4vw, 40px);
+  color: var(--textColor);
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+}
+
+/* 响应式设计 */
+@media screen and (max-width: 1280px) {
+  .categoryItem {
+    width: 20%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    margin-top: 30px;
+  }
+
+  .categories {
+    justify-content: space-around;
+  }
+
+  .categoryItem {
+    width: 30%;
+    height: 70px;
+    min-width: 120px;
+  }
+
+  .image {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin-top: 20px;
+  }
+
+  .title {
+    margin: 20px 0;
+  }
+
+  .categories {
+    gap: 10px;
+  }
+
+  .categoryItem {
+    width: 45%;
+    height: 60px;
+    min-width: 100px;
+    font-size: 0.9rem;
+  }
+
+  .image {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    margin-top: 15px;
+  }
+
+  .categories {
+    gap: 8px;
+  }
+
+  .categoryItem {
+    width: calc(50% - 10px); /* 考虑间距的两列布局 */
+    height: 50px;
+    min-width: auto;
+    padding: 8px;
+    font-size: 0.85rem;
+  }
+
+  .image {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+/* 添加动画效果 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.categoryItem {
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* 添加暗色主题支持 */
+@media (prefers-color-scheme: dark) {
+  .categoryItem {
+    background-color: var(--bgSoft);
+  }
+}

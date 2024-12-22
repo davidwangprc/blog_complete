@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "slug": "comfyui",
+    "title": "ComfyUI",
+    "description": "AI 绘画和工作流",
+    "color": "#57c4ff31",
+    "image": null,
+    "createdAt": "2024-12-07T02:59:48.545Z",
+    "updatedAt": "2024-12-07T02:59:48.545Z"
+  },
+  {
+    "id": 2,
+    "slug": "dairy",
+    "title": "Dairy",
+    "description": "日记和随笔",
+    "color": "#da85c731",
+    "image": null,
+    "createdAt": "2024-12-07T02:59:48.550Z",
+    "updatedAt": "2024-12-07T02:59:48.550Z"
+  },
+  {
+    "id": 3,
+    "slug": "travel",
+    "title": "Travel",
+    "description": "旅行见闻",
+    "color": "#7fb88133",
+    "image": null,
+    "createdAt": "2024-12-07T02:59:48.554Z",
+    "updatedAt": "2024-12-07T02:59:48.554Z"
+  },
+  {
+    "id": 4,
+    "slug": "food",
+    "title": "Food",
+    "description": "美食探索",
+    "color": "#ff795736",
+    "image": null,
+    "createdAt": "2024-12-07T02:59:48.558Z",
+    "updatedAt": "2024-12-07T02:59:48.558Z"
+  },
+  {
+    "id": 5,
+    "slug": "research",
+    "title": "Research",
+    "description": "研究和探索",
+    "color": "#ffb04f45",
+    "image": null,
+    "createdAt": "2024-12-07T02:59:48.561Z",
+    "updatedAt": "2024-12-07T02:59:48.561Z"
+  },
+  {
+    "id": 6,
+    "slug": "coding",
+    "title": "Coding",
+    "description": "编程技术",
+    "color": "#5e4fff31",
+    "image": null,
+    "createdAt": "2024-12-07T02:59:48.566Z",
+    "updatedAt": "2024-12-07T02:59:48.566Z"
+  }
+]

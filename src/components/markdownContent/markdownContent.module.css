@@ -1,0 +1,215 @@
+/* Markdown 基础样式 */
+.markdown {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--textColor);
+    max-width: 100%;
+    font-family: 'Noto Sans SC', sans-serif;
+}
+
+/* 重置所有默认间距 */
+.markdown * {
+    margin: 0;
+    padding: 0;
+}
+
+/* 标题样式 */
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+    font-weight: 600;
+    margin-top: 0.8rem;
+    margin-bottom: 0.2rem;
+}
+
+/* 段落样式 */
+.markdown p {
+    margin: 0.2rem 0;
+    line-height: 1.6;
+}
+
+/* 列表样式 */
+.markdown ul,
+.markdown ol {
+    margin: 0.2rem 0;
+    padding-left: 1.2rem;
+}
+
+/* 列表项样式 */
+.markdown li {
+    line-height: 1.4;
+    margin: 0;
+    padding: 0;
+}
+
+/* 列表项内容样式 */
+.markdown li > * {
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+/* 列表项内的段落 */
+.markdown li p {
+    display: inline;
+    margin: 0;
+}
+
+/* 代码块样式 */
+.markdown pre {
+    margin: 0.4rem 0;
+    padding: 0.5rem;
+    background-color: var(--softBg);
+    border-radius: 4px;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+/* 代码块内容 */
+.markdown pre code {
+    display: block;
+    line-height: 1.4;
+    /* font-family: monospace; */
+}
+
+/* 行内代码 */
+.markdown code {
+    background-color: var(--softBg);
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    font-size: 0.9em;
+    /* font-family: monospace; */
+}
+
+/* 引用块样式 */
+.markdown blockquote {
+    margin: 0.4rem 0;
+    padding: 0.5rem 1rem;
+    border-left: 4px solid var(--softBg);
+    background-color: var(--softBg);
+}
+
+/* 相邻元素间距控制 */
+.markdown h2 + *,
+.markdown h3 + * {
+    margin-top: 0.2rem;
+}
+
+/* 列表项间距 */
+.markdown li + li {
+    margin-top: 0;
+}
+
+/* 嵌套列表样式 */
+.markdown li > ul,
+.markdown li > ol {
+    margin: 0;
+    padding-left: 1.2rem;
+}
+
+/* 响应式调整 */
+@media screen and (max-width: 768px) {
+    .markdown {
+        font-size: 1rem;
+    }
+    
+    .markdown h1,
+    .markdown h2,
+    .markdown h3 {
+        margin-top: 0.6rem;
+        margin-bottom: 0.2rem;
+    }
+}
+
+/* 表格容器样式 */
+.tableContainer {
+    width: 100%;
+    overflow-x: auto;
+    margin: 1rem 0;
+}
+
+/* 表格基础样式 */
+.markdown table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0;
+    border: 1px solid var(--softBg);
+}
+
+/* 表头样式 */
+.markdown thead {
+    background-color: var(--softBg);
+}
+
+.markdown th {
+    font-weight: 600;
+    text-align: left;
+    padding: 12px;
+    border: 1px solid var(--softBg);
+}
+
+/* 表格单元格样式 */
+.markdown td {
+    padding: 12px;
+    border: 1px solid var(--softBg);
+    line-height: 1.4;
+}
+
+/* 表格行样式 */
+.markdown tr:nth-child(even) {
+    background-color: var(--softBg);
+    opacity: 0.8;
+}
+
+/* 表格行悬停效果 */
+.markdown tr:hover {
+    background-color: var(--softBg);
+}
+
+/* 响应式调整 */
+@media screen and (max-width: 768px) {
+    .markdown th,
+    .markdown td {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+}
+
+/* 确保表格内的内容不会溢出 */
+.markdown th,
+.markdown td {
+    word-break: break-word;
+    min-width: 100px;
+}
+
+/* 图片容器样式 */
+.imageContainer {
+    width: 100%;
+    margin: 1rem 0;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+/* 图片样式 */
+.markdownImage {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: contain;
+}
+
+/* 响应式图片调整 */
+@media screen and (max-width: 768px) {
+    .imageContainer {
+        margin: 0.5rem 0;
+    }
+    
+    .markdownImage {
+        border-radius: 4px;
+    }
+}

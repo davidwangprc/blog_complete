@@ -1,0 +1,13 @@
+[
+  {
+    "id": 1,
+    "username": "davidwang",
+    "password": "$2a$10$z0mw5mSeBDTgTGoHFZ.qDePu5MPiJ18wi1e5nOTSC.snxl00fBfMm",
+    "email": "davidwang@example.com",
+    "name": "David Wang",
+    "avatar": null,
+    "createdAt": "2024-12-07T02:59:48.539Z",
+    "updatedAt": "2024-12-07T02:59:48.539Z",
+    "isAdmin": 1
+  }
+]

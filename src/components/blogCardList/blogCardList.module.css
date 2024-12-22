@@ -1,0 +1,81 @@
+.container {
+  flex: 5;
+  margin-top: 50px;
+}
+
+.items {
+  margin-top: 20px;
+}
+
+/* 错误状态样式 */
+.emptyContainer {
+  width: 100%;
+  padding: 3rem;
+  text-align: center;
+  background: var(--softBg);
+  border-radius: 10px;
+  margin: 2rem 0;
+}
+
+.emptyContent {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.emptyTitle {
+  color: var(--textColor);
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.emptyMessage {
+  color: var(--softTextColor);
+}
+
+.viewAll {
+  font-size: 14px;
+  color: var(--softTextColor);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.viewAll:hover {
+  color: var(--textColor);
+  text-decoration: underline;
+}
+
+/* 响应式设计 */
+@media (max-width: 1024px) {
+  .items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .items {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 动画效果 */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.items {
+
+} 

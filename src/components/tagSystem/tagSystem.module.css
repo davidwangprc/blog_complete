@@ -1,0 +1,218 @@
+.container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  height: calc(100vh - 100px);
+  position: relative;
+}
+
+.sidebar {
+  width: 250px;
+  background: var(--softBg);
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebarHeader {
+  margin-bottom: 15px;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid var(--softTextColor);
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.addButton {
+  width: 100%;
+  padding: 8px;
+  background: var(--textColor);
+  color: var(--bg);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.category {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tagCount {
+  background: var(--textColor);
+  color: var(--bg);
+  padding: 2px 6px;
+  border-radius: 10px;
+  font-size: 0.8em;
+}
+
+.content {
+  flex: 1;
+  background: var(--softBg);
+  border-radius: 10px;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.tagItem {
+  margin-bottom: 10px;
+  padding: 12px;
+  border-radius: 8px;
+  background: var(--bg);
+  transition: all 0.3s ease;
+  border-left: 3px solid transparent;
+}
+
+.parentTag {
+  border-left-color: var(--category-1);
+  background: var(--softBg);
+}
+
+.childTag {
+  margin-left: 25px;
+  border-left-color: var(--category-2);
+  position: relative;
+}
+
+.childTag::before {
+  content: '';
+  position: absolute;
+  left: -25px;
+  top: 50%;
+  width: 22px;
+  height: 2px;
+  background: var(--border);
+}
+
+.childTag::after {
+  content: '';
+  position: absolute;
+  left: -25px;
+  top: 0;
+  bottom: 50%;
+  width: 2px;
+  background: var(--border);
+}
+
+.tagHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tagInfo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.tagName {
+  font-weight: 500;
+  color: var(--textColor);
+}
+
+.tagSlug {
+  font-size: 0.9em;
+  color: var(--softTextColor);
+}
+
+.tagActions {
+  display: flex;
+  gap: 5px;
+}
+
+.actionButton {
+  padding: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--textColor);
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+
+.actionButton:hover {
+  opacity: 1;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background: var(--bg);
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.formGroup input,
+.formGroup textarea,
+.formGroup select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid var(--softTextColor);
+  border-radius: 5px;
+}
+
+.formActions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.submitButton,
+.cancelButton {
+  padding: 8px 16px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.submitButton {
+  background: var(--textColor);
+  color: var(--bg);
+}
+
+.cancelButton {
+  background: var(--softBg);
+  color: var(--textColor);
+}
+
+.tagItem:hover {
+  transform: translateX(5px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+} 

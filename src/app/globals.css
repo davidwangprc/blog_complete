@@ -1,21 +1,128 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
+/* CSS变量定义，用于全局主题颜色管理 */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    --bg: #ffffff;
+    --textColor: #000000;
+    --softBg: #c9c9c9;
+    --softTextColor: #626262;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* 暗色主题 */
+:root[class="dark"] {
+    --bg: #0f172a;
+    --textColor: #dddddd;
+    --softBg: #1f273a;
+    --softTextColor: #a6a6a6;
+    --border: #d3d3d3;
+}
+
+/* 亮色主题 */
+:root[class="light"] {
+    --bg: #ffffff;
+    --textColor: #000000;
+    --softBg: #e9e6e6;
+    --softTextColor: #1c1c1c;
+    --border: #1f1e1e;
+}
+
+/* 分类颜色变量 - 使用ID定义（1-6） */
+:root {
+    /* ID 1: ComfyUI */
+    --category-1: rgba(147, 51, 234, 0.15);    /* 紫色系，代表 AI 和创新 */
+    --category-1-text: rgb(147, 51, 234);
+
+    /* ID 2: Dairy */
+    --category-2: rgba(236, 72, 153, 0.15);    /* 粉色系，代表日记随笔 */
+    --category-2-text: rgb(236, 72, 153);
+
+    /* ID 3: Travel */
+    --category-3: rgba(34, 197, 94, 0.15);     /* 绿色系，代表自然和旅行 */
+    --category-3-text: rgb(34, 197, 94);
+
+    /* ID 4: Food */
+    --category-4: rgba(234, 179, 8, 0.15);     /* 金色系，代表美食 */
+    --category-4-text: rgb(234, 179, 8);
+
+    /* ID 5: Research */
+    --category-5: rgba(59, 130, 246, 0.15);    /* 蓝色系，代表研究和科技 */
+    --category-5-text: rgb(59, 130, 246);
+
+    /* ID 6: Coding */
+    --category-6: rgba(244, 63, 94, 0.15);     /* 红色系，代表编程和技术 */
+    --category-6-text: rgb(244, 63, 94);
+    
+    /* 默认颜色 */
+    --category-default: rgba(148, 163, 184, 0.15);   /* 中性灰色，用作默认值 */
+    --category-default-text: rgb(148, 163, 184);
+}
+
+/* 全局样式重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 页面主体结构 */
+html {
+    background-color: var(--bg);
+    color: var(--textColor);
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+    max-width: 100vw;
+    overflow-x: hidden;
+    background-color: var(--bg);
+    /* background-color: blue;     */
+    color: var(--textColor);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+/* 链接样式 */
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* 主容器 */
+.container {
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--bg);
+    color: var(--textColor);
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* 内容包裹器 */
+.wrapper {
+    width: 100%;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+/* 响应式布局 */
+
+
+/* React Quill 样式 */
+.ql-container {
+    font-size: 28px !important;
+}
+
+.quill > .ql-container > .ql-editor.ql-blank::before {
+    color: #b3b3b1;
+}
+
+/* 调试辅助样式 */
+.theme-debug {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    padding: 1rem;
+    background-color: var(--bg);
+    border: 1px solid var(--softTextColor);
+    border-radius: 0.5rem;
+    z-index: 1000;
+}
+

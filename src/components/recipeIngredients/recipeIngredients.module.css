@@ -1,0 +1,144 @@
+.ingredientsSection {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: var(--bg);
+    border-radius: 15px;
+}
+
+/* 亮色主题样式 */
+@media (prefers-color-scheme: light) {
+    .ingredientsSection {
+        background: var(--bg) !important;
+    }
+}
+
+/* 暗色主题样式 */
+@media (prefers-color-scheme: dark) {
+    .ingredientsSection {
+        background: var(--softBg) !important;
+    }
+}
+
+.ingredientsList {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.ingredientItem {
+    display: grid;
+    grid-template-columns: 45% 20% 25% 10%;
+    gap: 10px;
+    align-items: center;
+    padding: 15px;
+    background: var(--Bg);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.ingredientItem:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.ingredientInput {
+    padding: 10px;
+    border: 1px solid rgba(255, 107, 107, 0.2);
+    border-radius: 8px;
+    font-size: 14px;
+    background: var(--bg);
+    color: var(--textColor);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.removeIngredient {
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255, 0, 0, 0.1);
+    color: #ff6b6b;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    margin-left: 2px;
+}
+
+.removeIngredient:hover {
+    background: rgba(255, 0, 0, 0.2);
+}
+
+.removeIngredient:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.addIngredient {
+    padding: 12px;
+    background: rgba(255, 107, 107, 0.1);
+    border: 1px dashed rgba(255, 107, 107, 0.3);
+    border-radius: 10px;
+    color: #ff6b6b;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.addIngredient:hover {
+    background: rgba(255, 107, 107, 0.2);
+}
+
+.ingredientNameContainer {
+    position: relative;
+    width: 100%;
+}
+
+.suggestions {
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    width: 100%;
+    background: var(--bg);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.suggestionItem {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.suggestionItem:hover {
+    background-color: var(--softBg);
+    color: var(--softColor);
+}
+
+.newIngredient {
+    border-color: #ffa500;
+}
+
+.newIngredientHint {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+    color: #ffa500;
+    white-space: nowrap;
+}
+
+select.ingredientInput {
+    appearance: none;
+    padding-right: 25px;
+    background-image: url("data:image/svg+xml,...");
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    cursor: pointer;
+}

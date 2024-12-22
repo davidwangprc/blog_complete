@@ -1,0 +1,47 @@
+.container {
+    width: 40px;
+    height: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 0 4px;
+    transition: all 0.3s ease;
+}
+
+.dark {
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.light {
+    background-color: rgba(15, 23, 42, 0.05);
+    border: 1px solid rgba(15, 23, 42, 0.1);
+}
+
+.ball {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+    transition: all 0.3s ease;
+}
+
+.darkBall {
+    left: 2px;
+    background: linear-gradient(to right bottom, #1a1a1a, #2d2d2d);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.lightBall {
+    right: 2px;
+    background: linear-gradient(to right bottom, #ffffff, #f0f0f0);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+    font-size: 12px;
+}
+

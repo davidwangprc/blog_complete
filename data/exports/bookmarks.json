@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "title": "Next.js 文档",
+    "url": "https://nextjs.org/docs",
+    "description": "Next.js 框架的官方文档，包含完整的 API 参考和教程。",
+    "icon": "https://nextjs.org/favicon.ico",
+    "screenshot": null,
+    "categoryId": 1,
+    "featured": 1,
+    "createdAt": "2024-12-07T03:00:52.729Z",
+    "updatedAt": "2024-12-07T03:04:09.783Z",
+    "categoryName": "开发文档",
+    "tagNames": null
+  },
+  {
+    "id": 2,
+    "title": "React 文档",
+    "url": "https://react.dev",
+    "description": "React 库的官方文档，包含组件、Hooks 等核心概念。",
+    "icon": "https://react.dev/favicon.ico",
+    "screenshot": null,
+    "categoryId": 1,
+    "featured": 1,
+    "createdAt": "2024-12-07T03:00:52.745Z",
+    "updatedAt": "2024-12-07T03:04:09.797Z",
+    "categoryName": "开发文档",
+    "tagNames": null
+  },
+  {
+    "id": 3,
+    "title": "VS Code",
+    "url": "https://code.visualstudio.com",
+    "description": "强大的代码编辑器，支持多种编程语言和扩展。",
+    "icon": "https://code.visualstudio.com/favicon.ico",
+    "screenshot": null,
+    "categoryId": 2,
+    "featured": 1,
+    "createdAt": "2024-12-07T03:00:52.763Z",
+    "updatedAt": "2024-12-07T03:04:09.809Z",
+    "categoryName": "工具资源",
+    "tagNames": null
+  },
+  {
+    "id": 4,
+    "title": "ChatGPT",
+    "url": "https://chat.openai.com",
+    "description": "OpenAI 开发的智能对话系统。",
+    "icon": "https://chat.openai.com/favicon.ico",
+    "screenshot": null,
+    "categoryId": 3,
+    "featured": 1,
+    "createdAt": "2024-12-07T03:00:52.775Z",
+    "updatedAt": "2024-12-07T03:04:09.822Z",
+    "categoryName": "AI 资源",
+    "tagNames": null
+  },
+  {
+    "id": 5,
+    "title": "ComfyUI",
+    "url": "https://github.com/comfyanonymous/ComfyUI",
+    "description": "强大的 Stable Diffusion 图形化工作流工具。",
+    "icon": "https://github.com/favicon.ico",
+    "screenshot": null,
+    "categoryId": 3,
+    "featured": 1,
+    "createdAt": "2024-12-07T03:00:52.786Z",
+    "updatedAt": "2024-12-07T03:04:09.834Z",
+    "categoryName": "AI 资源",
+    "tagNames": null
+  }
+]

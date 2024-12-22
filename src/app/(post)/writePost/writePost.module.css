@@ -1,0 +1,237 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.title {
+    font-size: 2.5rem;
+    color: var(--textColor);
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    color: var(--softTextColor);
+    font-size: 1.2rem;
+}
+
+.formSection {
+    background: var(--bgSoft);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.mainInfo {
+    margin-bottom: 2rem;
+}
+
+.input {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+.description {
+    width: 100%;
+    min-height: 100px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    resize: vertical;
+}
+
+.sectionTitle {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: var(--textColor);
+}
+
+.select {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+.editor {
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    min-height: 300px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.imageSection {
+    margin-bottom: 2rem;
+}
+
+.imageUpload {
+    border: 2px dashed var(--border);
+    padding: 2rem;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.uploadButton {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.8rem 1.5rem;
+    background: var(--button);
+    color: var(--textColor);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.uploadButton:hover {
+    background: var(--buttonHover);
+}
+
+.publishButton {
+    width: 100%;
+    padding: 15px;
+    margin-top: 30px;
+    background: linear-gradient(135deg, #ff6b6b 0%, #ff5252 100%);
+    color: var(--textColor);
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .publishButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 107, 107, 0.2);
+  }
+  
+  .publishButton:disabled {
+    background: #ffa8a8;
+    cursor: not-allowed;
+    transform: none;
+  }
+
+.error {
+    color: red;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: rgba(255, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+/* Markdown 编辑器样式 */
+.editorSection {
+    margin-bottom: 2rem;
+}
+
+.editorSection :global(.rc-md-editor) {
+    border: 1px solid var(--border);
+    border-radius: 5px;
+}
+
+.editorSection :global(.rc-md-editor .editor-container) {
+    min-height: 500px;
+}
+
+.editorSection :global(.rc-md-editor .rc-md-navigation) {
+    background-color: var(--bgSoft);
+    border-bottom: 1px solid var(--border);
+}
+
+.editorSection :global(.rc-md-editor .section-container) {
+    background-color: var(--bg);
+}
+
+/* 标签相关样式 */
+.tagsSection {
+    margin-bottom: 2rem;
+}
+
+.tagSearch {
+    position: relative;
+    width: 100%;
+}
+
+.tagInput {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.tagDropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 5px;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+
+
+.tagOption,
+.createTag {
+    padding: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.tagOption:hover,
+.createTag:hover {
+    background-color: var(--bgSoft);
+}
+
+.createTag {
+    color: var(--textSoft);
+    border-top: 1px solid var(--border);
+}
+
+.selectedTags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 0.8rem;
+    background: var(--bgSoft);
+    border-radius: 20px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.tag:hover {
+    background: var(--softBg);
+}
+
+.removeTag {
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+/* 添加其他必要的样式... */

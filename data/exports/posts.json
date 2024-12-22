@@ -1,0 +1,40 @@
+[
+  {
+    "id": 1,
+    "title": "[数据库示例] ComfyUI工作流入门指南",
+    "slug": "comfyui",
+    "content": "\n# ComfyUI工作流入门指南\n\nComfyUI 是一个功能强大的 Stable Diffusion 图形化工作流工具。本文将介绍基础工作流的创建方法。\n\n## 基本概念\n\n1. 工作流节点\n2. 连接和数据流\n3. 参数设置\n\n## 常用节点\n\n- KSampler\n- VAE Decoder\n- CLIP Text Encode\n- Load Checkpoint\n\n## 示例工作流\n\n这是一个基础的文生图工作流示例...",
+    "description": "ComfyUI 基础工作流搭建教程，适合新手入门学习",
+    "image": null,
+    "views": 96,
+    "featured": 1,
+    "published": 1,
+    "createdAt": "2024-12-07T03:00:52.231Z",
+    "updatedAt": "2024-12-07T03:00:52.231Z",
+    "authorId": 1,
+    "categoryId": 1,
+    "isRecipe": 0,
+    "authorName": "David Wang",
+    "categoryTitle": "ComfyUI",
+    "tagNames": null
+  },
+  {
+    "id": 2,
+    "title": "[数据库示例] 旅行计划模板",
+    "slug": "",
+    "content": "\n# 旅行计划完全指南\n\n如何制定一个完美的旅行计划？本文提供实用的模板和建议。\n\n## 计划要素\n\n1. 目的地研究\n2. 行程安排\n3. 预算控制\n\n## 必备清单\n\n- 证件\n- 必需品\n- 应急物品\n\n## 实用建议\n\n如何做好旅行准备工作...",
+    "description": "完整的旅行计划制定指南和注意事项",
+    "image": null,
+    "views": 41,
+    "featured": 0,
+    "published": 1,
+    "createdAt": "2024-12-07T03:00:52.263Z",
+    "updatedAt": "2024-12-07T03:00:52.263Z",
+    "authorId": 1,
+    "categoryId": 3,
+    "isRecipe": 0,
+    "authorName": "David Wang",
+    "categoryTitle": "Travel",
+    "tagNames": null
+  }
+]

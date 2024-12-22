@@ -1,0 +1,94 @@
+/* 导航栏容器样式 */
+.container {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    background: var(--bg);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    /* border-bottom: 1px solid var(--border); */
+    /* background-color: red; */
+}
+
+/* 社交媒体图标容器样式 */
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.iconImage {
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.iconImage:hover {
+    opacity: 0.7;
+}
+
+/* 图标组样式 */
+.iconGroup {
+    display: flex;
+    gap: 0.5rem;
+}
+
+/* Logo 样式 */
+.logoContainer {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.logoIcon {
+    font-size: 1.5rem;
+    color: var(--primary);
+}
+
+.logoText {
+    display: flex;
+    flex-direction: column;
+}
+
+.logoMain {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--textPrimary);
+}
+
+.logoSub {
+    font-size: 0.8rem;
+    color: var(--textSecondary);
+}
+
+/* 导航链接容器样式 */
+.links {
+    display: flex;
+    align-items: center;
+    gap: 1.0rem;
+}
+
+.link {
+    color: var(--textPrimary);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.link:hover {
+    color: var(--primary);
+}
+
+.userInfo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.userName {
+    color: var(--textPrimary);
+    font-size: 0.9rem;
+}
+

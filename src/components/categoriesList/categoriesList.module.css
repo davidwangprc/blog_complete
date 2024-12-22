@@ -1,0 +1,139 @@
+.container{
+    margin-top: 30px;
+    padding: 0 20px;
+}
+
+.title{
+    margin:20px 0px;
+}
+
+.categories{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: flex-start;
+}
+
+.categoryItem{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-transform: capitalize;
+    width: calc(33.33% - 10px);
+    min-height: 60px;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.image{
+    border-radius: 50%;
+    object-fit: cover;
+    width: 40px;
+    height: 40px;
+}
+
+.categoryText{
+    font-size: 14px;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 0 5px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--textColor);
+}
+
+.viewAll {
+    font-size: 14px;
+    color: var(--softTextColor);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.viewAll:hover {
+    color: var(--textColor);
+    text-decoration: underline;
+}
+
+/* 平板设备 */
+@media screen and (min-width: 768px) {
+    .container {
+        margin-top: 40px;
+        padding: 0 30px;
+    }
+
+    .categories {
+        gap: 20px;
+    }
+
+    .categoryItem {
+        width: calc(25% - 15px);
+        min-height: 70px;
+    }
+
+    .image {
+        width: 45px;
+        height: 45px;
+    }
+
+    .categoryText {
+        font-size: 16px;
+    }
+
+    .title {
+        font-size: 22px;
+    }
+}
+
+/* 桌面设备 */
+@media screen and (min-width: 1024px) {
+    .container {
+        margin-top: 50px;
+        padding: 0 40px;
+    }
+
+    .categories {
+        gap: 20px;
+    }
+
+    .categoryItem {
+        width: calc(20% - 16px);
+        min-height: 80px;
+    }
+
+    .image {
+        width: 50px;
+        height: 50px;
+    }
+
+    .categoryText {
+        font-size: 18px;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+}
+
+/* 大屏设备 */
+@media screen and (min-width: 1440px) {
+    .container {
+        max-width: 1400px;
+        margin: 50px auto;
+    }
+
+    .categoryItem {
+        width: calc(16.666% - 17px);
+    }
+}
+

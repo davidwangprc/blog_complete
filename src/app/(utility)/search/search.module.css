@@ -1,0 +1,224 @@
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.searchOptions {
+  background: var(--softBg);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+}
+
+.searchHeader {
+  margin-bottom: 25px;
+}
+
+.searchTypeSelector {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.typeButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg);
+  color: var(--textColor);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.typeButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.typeButton.active {
+  background: var(--category-1);
+  color: var(--category-1-text);
+  border-color: var(--category-1-text);
+}
+
+.typeIcon {
+  font-size: 16px;
+}
+
+.searchInputContainer {
+  display: flex;
+  gap: 12px;
+}
+
+.searchInput {
+  flex: 1;
+  padding: 14px 18px;
+  border: 2px solid var(--border);
+  border-radius: 8px;
+  font-size: 16px;
+  background: var(--bg);
+  color: var(--textColor);
+  transition: all 0.3s ease;
+}
+
+.searchInput:focus {
+  outline: none;
+  border-color: var(--category-1-text);
+  box-shadow: 0 0 0 3px var(--category-1);
+}
+
+.searchInput::placeholder {
+  color: var(--softTextColor);
+}
+
+.searchButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 28px;
+  background: var(--category-1);
+  color: var(--category-1-text);
+  border: 1px solid var(--category-1-text);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.searchButton:hover:not(:disabled) {
+  background: var(--category-1-text);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.searchButton:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.searchIcon, .spinnerIcon {
+  font-size: 16px;
+}
+
+.spinnerIcon {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.advancedOptions {
+  margin-top: 25px;
+  padding-top: 25px;
+  border-top: 1px solid var(--border);
+}
+
+/* .resultGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 25px;
+} */
+
+.noResults {
+  text-align: center;
+  padding: 40px;
+  color: var(--softTextColor);
+  background: var(--softBg);
+  border-radius: 12px;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+/* 标签和食材选择样式 */
+.tagLabel, .ingredientLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.tagLabel:hover, .ingredientLabel:hover {
+  background: var(--category-1);
+  border-color: var(--category-1-text);
+}
+
+.ingredientsList {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 15px;
+}
+
+.ingredientTag {
+  background: var(--category-1);
+  color: var(--category-1-text);
+  border: 1px solid var(--category-1-text);
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.ingredientTag:hover {
+  background: var(--category-1-text);
+  color: white;
+}
+
+.selectedIngredients {
+  margin-top: 20px;
+}
+
+.ingredientTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.ingredientTag {
+  margin-top: 10px;
+}
+
+.ingredientTag:hover {
+  background: var(--category-1-text);
+  color: white;
+}
+
+/* 日期和数字输入框样式 */
+.dateInput, .rangeInput {
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--bg);
+  color: var(--textColor);
+}
+
+/* 响应式调整 */
+@media screen and (max-width: 768px) {
+  .searchTypeSelector {
+    flex-direction: column;
+  }
+
+  .searchInputContainer {
+    flex-direction: column;
+  }
+
+  .searchButton {
+    width: 100%;
+  }
+} 

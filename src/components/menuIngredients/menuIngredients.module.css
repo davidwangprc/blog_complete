@@ -1,0 +1,89 @@
+.container {
+  margin-bottom: 30px;
+  padding: 20px;
+  background: var(--softBg);
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--softTextColor);
+}
+
+.headerIcon {
+  font-size: 24px;
+  color: var(--textSoft);
+}
+
+.headerTitle {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--textSoft);
+}
+
+.ingredients {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ingredient {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  background: var(--bg);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: var(--textColor);
+}
+
+.ingredient:hover {
+  background: var(--hover);
+  transform: translateX(5px);
+}
+
+.ingredientIcon {
+  font-size: 16px;
+  color: #ff6b6b;
+}
+
+.ingredientName {
+  flex: 1;
+  font-size: 14px;
+}
+
+.ingredientCount {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 12px;
+  color: var(--textSoft);
+}
+
+.fireIcon {
+  color: #ffd43b;
+  font-size: 12px;
+}
+
+/* 暗色主题适配 */
+@media (prefers-color-scheme: dark) {
+  .container {
+    background: var(--softBg);
+  }
+  
+  .ingredient {
+    border-color: var(--softTextColor);
+  }
+}
